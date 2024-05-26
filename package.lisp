@@ -7,4 +7,13 @@
 ;;  ╚═════╝╚══════╝  ╚═════╝ ╚═════╝ ╚══════╝  ╚═══╝
 (defpackage :cl-udev
   (:use :cl :cffi)
-  (:nicknames :udev))
+  (:nicknames :udev)
+  (:export
+   udev-new
+   monitor-udev
+   receive-device
+   get-fd
+
+   ;; device
+   dev-ptr
+   ))
