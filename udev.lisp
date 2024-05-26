@@ -122,7 +122,7 @@
 
 (defun receive-device (monitor)
   (let ((device (%monitor-receive-device monitor)))
-    (mk-dev device)))
+    (if (null-pointer-p device) nil (mk-dev device))))
 
 
 ;; ┌─┐┌─┐┬─┐┌─┐┌─┐┬─┐┌─┐

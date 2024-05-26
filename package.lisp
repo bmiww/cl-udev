@@ -15,5 +15,6 @@
    get-fd
 
    ;; device
-   dev-ptr
+   dev-subsystem
+   dev-sys-name
    ))
