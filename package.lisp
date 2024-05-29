@@ -17,4 +17,6 @@
    ;; device
    dev-subsystem
    dev-sys-name
+   dev-action
+   dev-dev-node
    ))
